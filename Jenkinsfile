@@ -95,7 +95,7 @@ pipeline {
                 }
             }
             steps {
-                sh  ''' source activate ${BUILD_TAG}
+                sh  ''' activate ${BUILD_TAG}
                         python setup.py bdist_wheel
                     '''
             }
